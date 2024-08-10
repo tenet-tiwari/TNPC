@@ -1,6 +1,4 @@
 
-
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaLink, FaFilePdf } from 'react-icons/fa';

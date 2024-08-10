@@ -1,6 +1,4 @@
 
-
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo1 from '../../assets/home/logo1.png';

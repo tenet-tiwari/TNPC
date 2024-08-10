@@ -5,6 +5,7 @@ import Recruiters from '../components/home/Recruiters';
 import Charts from '../components/home/Charts';
 import Members from '../components/home/Members';
 import Footer from '../components/home/Footer';
+import ContactUs from '../components/home/ContactUs';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Recruiters />
       <Charts />
       <Members />
+      <ContactUs/>
       <Footer />
     </div>
   );

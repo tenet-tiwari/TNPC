@@ -117,7 +117,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <div className="flex justify-center mt-4 space-x-4">
+            <div className="flex justify-center mt-4 space-x-10 animate-pulse">
               <a href="https://x.com/" className="text-gray-300 hover:text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +157,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-sm text-center py-4">&copy; {new Date().getFullYear()} National Institute of Technology Silchar. All rights reserved.</p>
+        <p className="text-sm text-center py-4">&copy; {new Date().getFullYear()} National Institute of Technology Silchar TNPC. All rights reserved.</p>
       </footer>
     </footer>
   );

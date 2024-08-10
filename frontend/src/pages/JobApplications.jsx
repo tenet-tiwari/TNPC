@@ -1,8 +1,4 @@
 
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -50,6 +46,7 @@ const JobApplications = () => {
       return;
     }
     try {
+      if (window.confirm(`Are you sure you want to delete ?`)) {
       await axios.delete(`http://localhost:5000/api/jobs/${applicationId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -57,7 +54,7 @@ const JobApplications = () => {
       });
       const updatedApplications = applications.filter(app => app._id !== applicationId);
       setApplications(updatedApplications);
-    } catch (error) {
+    }} catch (error) {
       window.alert('Failed to reject application');
     }
   };

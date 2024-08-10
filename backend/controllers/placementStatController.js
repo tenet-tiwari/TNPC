@@ -1,6 +1,4 @@
 
-
-
 const PlacementStat = require('../models/PlacementStat');
 
 exports.addOrUpdatePlacementStat = async (req, res) => {
