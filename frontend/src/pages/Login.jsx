@@ -30,7 +30,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', loginData);
+      const response = await axios.post('https://tnpc.onrender.com/api/auth/login', loginData);
       const { token } = response.data;
 
       if (token) {

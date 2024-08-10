@@ -50,7 +50,7 @@ const ApplicationPage = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:5000/api/jobs/apply/${id}`, formDataToSend, {
+      const response = await axios.post(`https://tnpc.onrender.com/api/jobs/apply/${id}`, formDataToSend, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',

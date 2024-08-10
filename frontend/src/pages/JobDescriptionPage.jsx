@@ -11,7 +11,7 @@ const JobDescriptionPage = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/jobs/all-jobs');
+        const response = await axios.get('https://tnpc.onrender.com/api/jobs/all-jobs');
         const allJobs = response.data;
         const selectedJob = allJobs.find(job => job._id === id);
         setJob(selectedJob);

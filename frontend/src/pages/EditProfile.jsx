@@ -46,7 +46,7 @@ const EditProfile = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/profile/edit', formDataToSubmit, {
+      await axios.post('https://tnpc.onrender.com/api/profile/edit', formDataToSubmit, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',

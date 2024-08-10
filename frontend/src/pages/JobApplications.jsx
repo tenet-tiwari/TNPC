@@ -19,7 +19,7 @@ const JobApplications = () => {
         return;
       }
       try {
-        const response = await axios.get('http://localhost:5000/api/jobs/all', {
+        const response = await axios.get('https://tnpc.onrender.com/api/jobs/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -47,7 +47,7 @@ const JobApplications = () => {
     }
     try {
       if (window.confirm(`Are you sure you want to delete ?`)) {
-      await axios.delete(`http://localhost:5000/api/jobs/${applicationId}`, {
+      await axios.delete(`https://tnpc.onrender.com/api/jobs/${applicationId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

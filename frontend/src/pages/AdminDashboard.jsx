@@ -232,13 +232,13 @@ const AdminDashboard = () => {
     const fetchData = async () => {
       try {
         // Fetch all users
-        const usersResponse = await axios.get('http://localhost:5000/api/auth', {
+        const usersResponse = await axios.get('https://tnpc.onrender.com/api/auth', {
           headers: { Authorization: `Bearer ${localStorage.getItem('authToken')}` },
         });
         const allUsers = usersResponse.data;
 
 
-        const adminResponse = await axios.get('http://localhost:5000/api/profile/admin', {
+        const adminResponse = await axios.get('https://tnpc.onrender.com/api/profile/admin', {
           headers: { Authorization: `Bearer ${localStorage.getItem('authToken')}` },
         });
         setAdminDetails(adminResponse.data);
@@ -247,7 +247,7 @@ const AdminDashboard = () => {
         const students = allUsers.filter(user => user.role === 'student');
         setStudents(students);
 
-        const placementStatsResponse = await axios.get('http://localhost:5000/api/placementStats');
+        const placementStatsResponse = await axios.get('https://tnpc.onrender.com/api/placementStats');
         const fetchedPlacementStats = placementStatsResponse.data;
         setPlacementStats(fetchedPlacementStats);
 

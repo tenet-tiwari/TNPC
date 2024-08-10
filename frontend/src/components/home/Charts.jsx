@@ -31,7 +31,7 @@ const Charts = () => {
   useEffect(() => {
     const fetchYearWiseData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/placementStats/');
+        const response = await axios.get('https://tnpc.onrender.com/api/placementStats/');
         const data = response.data;
 
         const yearsAvailable = Object.keys(data).sort().reverse();

@@ -23,12 +23,12 @@ const StudentDashboard = () => {
       }
       try {
         const [studentResponse, skillsResponse] = await Promise.all([
-          axios.get('http://localhost:5000/api/profile/basic', {
+          axios.get('https://tnpc.onrender.com/api/profile/basic', {
             headers: {
               Authorization: `Bearer ${token}`,
             },
           }),
-          axios.get('http://localhost:5000/api/profile/details', {
+          axios.get('https://tnpc.onrender.com/api/profile/details', {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -161,12 +161,12 @@ export default StudentDashboard;
 //       }
 //       try {
 //         const [studentResponse, skillsResponse] = await Promise.all([
-//           axios.get('http://localhost:5000/api/profile/basic', {
+//           axios.get('https://tnpc.onrender.com/api/profile/basic', {
 //             headers: {
 //               Authorization: `Bearer ${token}`,
 //             },
 //           }),
-//           axios.get('http://localhost:5000/api/profile/details', {
+//           axios.get('https://tnpc.onrender.com/api/profile/details', {
 //             headers: {
 //               Authorization: `Bearer ${token}`,
 //             },

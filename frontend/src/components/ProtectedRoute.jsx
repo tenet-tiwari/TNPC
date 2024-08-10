@@ -30,7 +30,7 @@
 //       }
 
 //       try {
-//         const response = await axios.get('http://localhost:5000/api/auth/verification', {
+//         const response = await axios.get('https://tnpc.onrender.com/api/auth/verification', {
 //           headers: {
 //             Authorization: `Bearer ${token}`,
 //           },
@@ -100,7 +100,7 @@ const ProtectedRoute = ({ children, requiredRole }) => {
       }
 
       try {
-        const response = await axios.get('http://localhost:5000/api/auth/verification', {
+        const response = await axios.get('https://tnpc.onrender.com/api/auth/verification', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

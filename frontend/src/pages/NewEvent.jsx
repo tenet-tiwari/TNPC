@@ -38,7 +38,7 @@ const NewEvent = () => {
     formDataToSend.append('link', formData.link);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/event/add-event', formDataToSend, {
+      const response = await axios.post('https://tnpc.onrender.com/api/event/add-event', formDataToSend, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data'

@@ -16,7 +16,7 @@ const TrainingCoursesPage = () => {
         return;
       }
       try {
-        const response = await axios.get('http://localhost:5000/api/training/all', {
+        const response = await axios.get('https://tnpc.onrender.com/api/training/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

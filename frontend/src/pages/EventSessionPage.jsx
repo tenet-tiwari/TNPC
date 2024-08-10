@@ -17,7 +17,7 @@ const EventSessionPage = () => {
         return;
       }
       try {
-        const response = await axios.get('http://localhost:5000/api/event/all', {
+        const response = await axios.get('https://tnpc.onrender.com/api/event/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -34,7 +34,7 @@ const NewJobPosting = () => {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:5000/api/jobs/add-job', formData, {
+      const response = await axios.post('https://tnpc.onrender.com/api/jobs/add-job', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }

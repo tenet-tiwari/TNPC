@@ -12,7 +12,7 @@ const JobPosting = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-         response = await axios.get('http://localhost:5000/api/jobs/all-jobs');
+         response = await axios.get('https://tnpc.onrender.com/api/jobs/all-jobs');
         setJobs(response.data);
         
       } catch (error) {

@@ -38,7 +38,7 @@ const NewTraining = () => {
     formDataToSend.append('link', formData.link);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/training/add-training', formDataToSend, {
+      const response = await axios.post('https://tnpc.onrender.com/api/training/add-training', formDataToSend, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data'
